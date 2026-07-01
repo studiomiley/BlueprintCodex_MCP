@@ -1,0 +1,38 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Blueprint Codex MCP",
+	"Description": "Optional companion to Blueprint Codex: exposes Codex's asset exporters to Epic's in-editor Unreal MCP (UE 5.8) as AI-callable tools, so an MCP client can pull a project index and the readable Structure/Flow text of any asset on demand. Requires the Blueprint Codex plugin plus UE 5.8's Toolset Registry and Model Context Protocol plugins (both Experimental). Editor-only; Windows, UE 5.8.",
+	"Category": "Blueprint Codex",
+	"CreatedBy": "Studio Miley",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"EnabledByDefault": false,
+	"SupportedTargetPlatforms": [ "Win64" ],
+	"Modules": [
+		{
+			"Name": "BlueprintCodex_MCP",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [ "Win64" ]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ToolsetRegistry",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true
+		}
+	]
+}

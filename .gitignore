@@ -1,0 +1,18 @@
+# Unreal Engine build artifacts
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+*.pdb
+
+# IDE / OS
+.vs/
+.vscode/
+*.sln
+*.user
+.DS_Store
+Thumbs.db
+
+# Anchorpoint (local project management, not part of the plugin)
+.ap/
+*.approj
